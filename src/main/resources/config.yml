@@ -1,0 +1,37 @@
+autoAFK: 30
+priority:
+  - reward2
+  - reward1
+  - defaultReward
+RewardMessage:
+  enabled: true
+  message: '你挂机获得了 <money> 块钱和 <exp> 点经验.'
+LimitMessage: '由于你的经验和金币已经到达挂机上限,不再增加.'
+LimitMoneyMessage: '由于你的金币已经到达挂机上限,不再增加.'
+LimitExpMessage: '由于你的经验已经到达挂机上限,不再增加.'
+
+
+reward2:
+  permission: autoAFK.reward2
+  money: 1
+  exp: 3
+  limitMoney: 3000
+  limitExp: 5637
+  commands:
+
+reward1:
+  permission: autoAFK.reward1
+  money: 1
+  exp: 2
+  limitMoney: 2000
+  limitExp: 1628
+  commands:
+
+defaultReward:
+  permission:
+  money: 1
+  exp: 1
+  limitMoney: 1000
+  limitExp: 352
+  commands:
+    - 'msg %player_name% testReward'

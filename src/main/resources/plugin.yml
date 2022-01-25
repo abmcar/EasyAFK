@@ -1,0 +1,14 @@
+name: EasyAFK
+version: '${project.version}'
+main: top.abmcar.easyafk.EasyAFK
+depend: [ Vault, PlaceholderAPI ]
+authors: [ abmcar ]
+description: Auto AFK
+commands:
+  EasyAFK:
+    aliases:
+      - "eafk"
+    usage: "/EasyAFK reload - reload config file."
+    description: "Reload config."
+    permission: "EasyAFK.reload"
+    permission-message: "No Permission!"

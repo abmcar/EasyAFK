@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="EasyAFK">
+    <output-path>D:/BaiduNetdiskDownload/Server/Temp/plugins</output-path>
+    <root id="archive" name="EasyAFK.jar">
+      <element id="module-output" name="EasyAFK" />
+    </root>
+  </artifact>
+</component>
