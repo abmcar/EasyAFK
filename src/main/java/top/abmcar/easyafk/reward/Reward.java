@@ -52,7 +52,7 @@ public class Reward {
 
     public boolean isExpLimit(Player player, String rewardType) {
         Integer limitExp = ConfigData.INSTANCE.getLimitExp(rewardType);
-        return player.getExp() >= limitExp;
+        return player.getTotalExperience() >= limitExp;
     }
 
     public boolean isLimit(Player player, String rewardType) {

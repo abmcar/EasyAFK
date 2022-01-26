@@ -8,7 +8,7 @@ commands:
   EasyAFK:
     aliases:
       - "eafk"
-    usage: "/EasyAFK reload - reload config file."
+    usage: "/EasyAFK help - show usage."
     description: "Reload config."
     permission: "EasyAFK.reload"
     permission-message: "No Permission!"

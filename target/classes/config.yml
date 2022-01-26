@@ -5,7 +5,7 @@ priority:
   - defaultReward
 RewardMessage:
   enabled: true
-  message: '你挂机获得了 <money> 块钱和 <exp> 点经验.'
+  message: '你挂机获得了 <money> 块钱和 <exp> 点经验. (输入/EasyAFK off\on 关闭或开启提示信息)'
 LimitMessage: '由于你的经验和金币已经到达挂机上限,不再增加.'
 LimitMoneyMessage: '由于你的金币已经到达挂机上限,不再增加.'
 LimitExpMessage: '由于你的经验已经到达挂机上限,不再增加.'

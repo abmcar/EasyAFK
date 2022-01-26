@@ -1,5 +1,5 @@
 name: EasyAFK
-version: '1.0-SNAPSHOT'
+version: '1.1-SNAPSHOT'
 main: top.abmcar.easyafk.EasyAFK
 depend: [ Vault, PlaceholderAPI ]
 authors: [ abmcar ]
@@ -8,7 +8,7 @@ commands:
   EasyAFK:
     aliases:
       - "eafk"
-    usage: "/EasyAFK reload - reload config file."
+    usage: "/EasyAFK help - show usage."
     description: "Reload config."
     permission: "EasyAFK.reload"
     permission-message: "No Permission!"

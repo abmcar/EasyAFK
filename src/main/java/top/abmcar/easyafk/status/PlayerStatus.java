@@ -14,7 +14,8 @@ public class PlayerStatus {
     }
 
     public Integer nowTime = 0;
-    public Map<UUID, Integer> lastMoveTime = new HashMap<UUID, Integer>();
+    public Map<UUID, Integer> lastMoveTime = new HashMap<>();
+    public Map<UUID, Boolean> tipsEnabled = new HashMap<>();
 
     public void updateTime(Player player) {
         lastMoveTime.put(player.getUniqueId(), nowTime);
@@ -24,5 +25,15 @@ public class PlayerStatus {
         if (!lastMoveTime.containsKey(player.getUniqueId()))
             lastMoveTime.put(player.getUniqueId(), nowTime);
         return nowTime - lastMoveTime.get(player.getUniqueId()) >= ConfigData.INSTANCE.AUTO_AFK_TIME();
+    }
+
+    public boolean tipsEnabled(Player player) {
+        if (!tipsEnabled.containsKey(player.getUniqueId()))
+            tipsEnabled.put(player.getUniqueId(), true);
+        return tipsEnabled.get(player.getUniqueId());
+    }
+
+    public void changeTipsEnabled(Player player, boolean enabled) {
+        tipsEnabled.put(player.getUniqueId(), enabled);
     }
 }
